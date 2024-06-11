@@ -1,0 +1,92 @@
+// Variables for colors and fonts
+$primary-color: #FFFFFF; // Example orange color for the primary button and links
+$secondary-color: #343A40; // Dark gray for text
+$background-color: #FF7235; // White background
+$accent-color: #4CAF50; // Green for highlights
+
+// Base styling
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Header
+header {
+  background: $primary-color;
+  padding: 1rem 2rem;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      color: $background-color;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          color: $background-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Main banner
+.banner {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  background-size: cover;
+.left {
+    
+  h1 {
+    color: $secondary-color;
+    font-size: 2.5rem;
+  }
+
+  p {
+    color: $accent-color;
+  }
+
+  .demo-button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    color: $background-color;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+}
+
+// Footer
+footer {
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
